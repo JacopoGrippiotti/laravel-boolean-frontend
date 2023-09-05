@@ -9,5 +9,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    @use '../styles/general.scss' as*;
+    @use '../style/general.scss' as*;
 </style>

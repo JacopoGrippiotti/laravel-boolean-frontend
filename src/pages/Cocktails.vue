@@ -1,7 +1,24 @@
 <template>
-    <div>
-        aaaaaaaa
-    </div>
+    <section class="projects-wrapper">
+        <h1 class="main-title">
+            Cocktails
+        </h1>
+        <nav class="pagination">
+            <li class="prev" @click="prevPage" v-if="prevPageUrl">
+                Previous
+            </li>
+            <li class="next" @click="nextPage" v-if="nextPageUrl">
+                Next
+            </li>
+        </nav>
+        <div class="cocktails">
+            <SingleCocktail class="single-project w-50" v-for="cocktail in cocktailsList" 
+            :image="cocktail.image"
+            :title="cocktail.title"                      
+            :content="cocktail.content"
+            />
+        </div>
+    </section>
 </template>
 <script>
 import axios from 'axios';

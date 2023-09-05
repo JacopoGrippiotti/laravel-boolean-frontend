@@ -14,7 +14,7 @@
         <div class="cocktails">
             <SingleCocktail class="single-project w-50" v-for="cocktail in cocktailsList" 
             :image="cocktail.image"
-            :title="cocktail.title"                      
+            :title="cocktail.name"                      
             :content="cocktail.content"
             />
         </div>

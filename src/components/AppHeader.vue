@@ -24,11 +24,11 @@ export default {
                 },
                 {
                     route: 'aboutUs',
-                    name: 'AboutUs'
+                    name: 'About Us'
                 },
                 {
                     route: 'contacts',
-                    name: 'Contact'
+                    name: 'Contacts'
                 }
             ]
         }
@@ -37,5 +37,23 @@ export default {
 }
 </script>
 <style lang="scss">
-    
+
+    nav.navbar{
+        padding: 3rem;
+
+        ul{
+            width: 100%;
+            list-style-type: none;
+
+            li{
+                margin: 0 auto;
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 </style>

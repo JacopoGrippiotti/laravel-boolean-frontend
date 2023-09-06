@@ -21,6 +21,7 @@
             :image="cocktail.image"
             :title="cocktail.name"                      
             :content="cocktail.content"
+            @click="$router.push({ name: 'cocktails.show', params: { id: cocktail.id} })"
             />
         </div>
     </section>

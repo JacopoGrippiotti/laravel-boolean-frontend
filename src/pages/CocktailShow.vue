@@ -1,5 +1,5 @@
 <template >
-    <SingleCocktail v-if="cocktail" class="single-cocktail w-50" 
+    <SingleCocktail v-if="cocktail" class="single-cocktail w-50 mx-auto" 
             :image="cocktail.image"
             :title="cocktail.name"                      
             :content="cocktail.content"
@@ -54,7 +54,7 @@ export default {
 
         img{
             width: 100%;
-            height: 10rem;
+            height: 6rem;
             object-fit: cover;
         }
 

@@ -1,16 +1,16 @@
 <template>
     <section class="projects-wrapper">
         <h1 class="main-title text-center">
-            Cocktails
+            COCKTAILS
         </h1>
         <nav class="pagination flex-row mx-5 justify-content-between ">
 
-            <div> 
+            <div class="btn btn-primary"> 
                 <span class="prev align-self-start" @click="prevPage" v-if="prevPageUrl">
                     Previous
                 </span>
             </div>
-            <div>
+            <div class="btn btn-primary">
                 <span class="next align-self-end" @click="nextPage" v-if="nextPageUrl">
                     Next
                 </span>
@@ -80,5 +80,10 @@ export default {
 
     span{
         cursor: pointer;
+    }
+    
+    h1{
+        color:white ;
+        font-weight: 900;
     }
 </style>

@@ -35,7 +35,7 @@ export default {
     
     div.card{
         width: calc(( 100% / 4 ) - 30px);
-        background-color: green;
+        background-color: gainsboro;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -43,10 +43,14 @@ export default {
         text-align: justify;
         border-radius: 10px;
         padding: 10px 10px;
+        &:hover{
+            filter: brightness(130%);
+            transition: linear .2s;
+        }
         
 
         div.card-title{
-            color: white;
+            color: black;
             padding: 10px 0px;
             font-size: 1.2rem;
             font-weight: 600;

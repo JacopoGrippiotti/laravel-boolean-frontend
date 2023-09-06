@@ -21,6 +21,11 @@ routes: [
         name: 'contacts',
         component: Contact
     },
+    {
+        path: '/cocktails/:id',
+        name : 'cocktails.show',
+        component : CocktailShow,
+    },
 ]
 });
 export { router };

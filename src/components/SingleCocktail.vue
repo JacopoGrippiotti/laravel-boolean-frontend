@@ -24,7 +24,7 @@ export default {
     props:{
         image: String,
         title: String,
-        content:String
+        content: String
     }
 }
 </script>

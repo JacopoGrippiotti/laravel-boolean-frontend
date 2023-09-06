@@ -1,5 +1,5 @@
 <template >
-    <SingleCocktail v-if="cocktail" class="single-cocktail w-50 mx-auto" 
+    <SingleCocktail v-if="cocktail" class="single-cocktail w-50 mx-auto mb-4" 
             :image="cocktail.image"
             :title="cocktail.name"                      
             :content="cocktail.content"

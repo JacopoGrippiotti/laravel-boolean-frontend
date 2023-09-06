@@ -1,18 +1,23 @@
 <template>
     <section class="projects-wrapper">
-        <h1 class="main-title">
+        <h1 class="main-title text-center">
             Cocktails
         </h1>
-        <nav class="pagination">
-            <li class="prev" @click="prevPage" v-if="prevPageUrl">
-                Previous
-            </li>
-            <li class="next" @click="nextPage" v-if="nextPageUrl">
-                Next
-            </li>
+        <nav class="pagination flex-row mx-5 justify-content-between ">
+
+            <div> 
+                <span class="prev align-self-start" @click="prevPage" v-if="prevPageUrl">
+                    Previous
+                </span>
+            </div>
+            <div>
+                <span class="next align-self-end" @click="nextPage" v-if="nextPageUrl">
+                    Next
+                </span>
+            </div>
         </nav>
-        <div class="cocktails">
-            <SingleCocktail class="single-project w-50" v-for="cocktail in cocktailsList" 
+        <div class="cocktails d-flex flex-wrap justify-content-center gap-4">
+            <SingleCocktail class="single-project" v-for="cocktail in cocktailsList" 
             :image="cocktail.image"
             :title="cocktail.name"                      
             :content="cocktail.content"
@@ -72,4 +77,8 @@ export default {
 </script>
 <style lang="scss" scoped>
     @use '../style/general.scss' as*;
+
+    span{
+        cursor: pointer;
+    }
 </style>

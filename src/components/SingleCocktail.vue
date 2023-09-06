@@ -1,4 +1,5 @@
 <template>
+    
     <div class="card">
         <div class="img-wrapper">
             <img  :src="image" alt="">
@@ -12,6 +13,7 @@
         </div>
 
     </div>
+   
 </template>
 <script>
 export default {
@@ -32,13 +34,12 @@ export default {
     @use '../style/general.scss' as *;
     
     div.card{
-        width: calc((100% / 4) - 30px);
+        width: calc(( 100% / 4 ) - 30px);
         background-color: green;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-content: space-between;
-        height: 500px;
         text-align: justify;
         border-radius: 10px;
         padding: 10px 10px;
@@ -53,7 +54,7 @@ export default {
         }
 
         div.img-wrapper{
-            width: 100%;
+            
             border-radius: 10px;
             
 
@@ -61,7 +62,6 @@ export default {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: top;
                 border-radius: 10px;
             }
         }
